@@ -1,0 +1,29 @@
+{
+  "name": "v-tag-editor",
+  "version": "0.0.1",
+  "description": "Vue.js Tag Editor component",
+  "author": "Marcos Neves <marcos.neves@gmail.com>",
+  "main": "dist/v-tag-editor.js",
+  "license": "MIT",
+  "scripts": {
+    "dist": "vue build ./src/index.js --config ./build.config.js --dist ./dist/ --prod --lib",
+    "dist:demo": "vue build ./src/demo.vue --config ./build.config.js --dist ./demo/ --prod",
+    "build": "npm run dist -- --disable-compress",
+    "start": "npm run dev",
+    "dev": "vue build ./src/demo.vue --config ./build.config.js",
+    "demo:open": "open 'http://localhost:3000/'; serve ./demo/"
+  },
+  "files": [
+    "dist/"
+  ],
+  "keywords": [
+    "vue",
+    "component",
+    "tag",
+    "input"
+  ],
+  "dependencies": {
+    "v-tag-input": "^0.0.3",
+    "v-tag-list": "^0.0.2"
+  }
+}
